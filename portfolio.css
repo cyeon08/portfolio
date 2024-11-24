@@ -1,1 +1,116 @@
+div.main {
+	background-color: #fffff; 	
+}
+
+div.work-main{
+	font-size: 20px;
+    color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+div.work-title-1 h1{
+	text-align: center;
+}
+
+div.wrapper-4 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+div.wrapper-0{
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+}
+
+div.wrapper-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+div.wrapper-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+div.wrapper-3 {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+video {
+  width: 100%; /* Makes the video fit the column width */
+  /*height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the video fills the space without distortion */
+}
+
+
+/* start side bar styles */
+#bdSidebar {
+	width: 15%;
+	align-items: center;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+	
+}
+
+#myList {
+	color: brown;
+}
+
+#myList a.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#myList a:hover {
+    background: red;
+}
+
+.gfg {
+    height: 20px;
+    width: 20px;
+
+}
+
+.mynav {
+    color: #fff;
+}
+
+.mynav li a {
+    color: black;
+    text-decoration: none;
+	font-size: 30px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+.mynav li a.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mynav li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mynav li a i {
+    width: 25px;
+    text-align: center;
+}
+
+.notification-badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    color: #222;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 2px;
+}
+/* start side bar styles */
+
+
 
