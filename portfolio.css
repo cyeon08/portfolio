@@ -1,3 +1,154 @@
+@media (min-width: 1200px) {
+   .modal-xlg {
+      width: 100%; 
+   }
+}
+
+/* Style for the logo image */
+.logo-img {
+   max-width: 100%;    /* Allows the image to scale based on its container */
+   height: auto;       /* Maintains the aspect ratio */
+   max-height: 500px;  /* Optional: Limits the max height of the logo */
+}
+
+/* Optional: Adjust container for smaller screens */
+@media (max-width: 768px) {
+   .container {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: white;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* sa video un motion graphics */
+.wrapper-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    width: 100px; /* Size of the play button */
+    height: 100px; /* Size of the play button */
+    
+    border-radius: 50%; /* Circular button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+    transition: transform 0.2s ease; /* Smooth scaling on hover */
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1); /* Slight zoom effect on hover */
+}
+
+.play-button::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 40px 25px 40px; /* Define the triangle size (top, right, bottom, left) */
+    border-color: transparent transparent transparent black; /* Black triangle pointing right */
+	margin-left:50%;
+}
+
+
+.play-button.hidden {
+    display: none;
+}
+
+
+/* Media Query for smaller devices */
+@media (max-width: 700px) {
+    .play-button {
+        width: 10vw;  /* Increase the button size on smaller screens */
+        height: 10vw; /* Increase the button size on smaller screens */
+    }
+
+    .play-button::before {
+        border-width: 4vw 6vw 4vw 6vw; /* Increase triangle size on smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .play-button {
+        width: 20vw;  /* Make the button larger on mobile devices */
+        height: 20vw; /* Make the button larger on mobile devices */
+    }
+
+    .play-button::before {
+        border-width: 6vw 8vw 6vw 8vw; /* Increase triangle size on mobile */
+    }
+}
+
+
+
+
 div.main {
 	background-color: white; 	
 }
@@ -5,10 +156,13 @@ div.main {
 div.work-main{
 	font-size: 30px;
     color: black;
-	font-family: Comic Sans MS, sans-serif;
-	background-color: pink;
+	font-family: "Quicksand", Arial, sans-serif;
+	background-color: white;
+
 	
 }
+
+
 #myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -234,6 +388,33 @@ div.work-main{
 
 #myImg27:hover {opacity: 0.7;}
 
+
+#myImg28 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg28:hover {opacity: 0.7;}
+
+
+#myImg29 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg29:hover {opacity: 0.7;}
+
+
+#myImg30 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg30:hover {opacity: 0.7;}
+
 /* The Modal (background) harley */
 .modal {
   display: none; /* Hidden by default */
@@ -253,8 +434,8 @@ div.work-main{
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+ 
+  max-width: 300px;
 }
 
 
@@ -303,24 +484,9 @@ div.work-main{
   .modal-content {
     width: 100%;
   }
-  .modal-content01 {
-    width: 100%;
-  }
-  .modal-content02 {
-    width: 100%;
-  }
-  .modal-content03 {
-    width: 100%;
-  }
-  .modal-content04 {
-    width: 100%;
-  }
-   .modal-content05 {
-    width: 100%;
-  }
-  .modal-content06 {
-    width: 100%;
-  }
+   .modal-xlg {
+      width: 100%; 
+   }
 }
 
 div.work-title-1 h1{
@@ -331,26 +497,120 @@ div.wrapper-4 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
-
-div.wrapper-0{
-  display: grid;
-  grid-template-columns: repeat(4, 3fr);
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-4 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
 }
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-4 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+div.wrapper-0 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  
+}
+
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-0 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-0 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
 
 div.wrapper-1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-1 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-1 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+
 
 div.wrapper-2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   
 }
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-2 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-2 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+
 div.wrapper-3 {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 }
+
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-3 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-3 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+
+div.wrapper-5 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive adjustment for medium screens */
+@media (max-width: 1024px) {
+  div.wrapper-5 {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+  }
+}
+
+/* Stacking columns for small screens */
+@media (max-width: 600px) {
+  div.wrapper-5 {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}
+
+
 
 video {
   width: 100%; /* Makes the video fit the column width */
@@ -368,7 +628,7 @@ video {
 
 html, body {
     height: 100%;
-    font-family: Comic Sans MS, sans-serif, sans-serif;
+    font-family:"Quicksand", Arial, sans-serif;
 	
 }
 
@@ -377,11 +637,11 @@ html, body {
 }
 
 #myList a.active {
-    background-color: pink;
+    background-color: #ADE1FB;
 }
 
 #myList a:hover {
-    background: red;
+    background: #ADE1FB;
 }
 
 @media only screen and (max-width: 768px)
@@ -391,6 +651,11 @@ html, body {
     width: 20px;
 
 }
+.col-md-4 {
+	font-size: 30px;
+}
+
+
 
 .mynav {
     color: #fff;
@@ -430,4 +695,272 @@ html, body {
 /* start side bar styles */
 
 
+.list-group-item.active {
+	color: blue;
+}
+
+.sidenav a:hover {
+    color: #ADE1FB;
+}
+
+.heading-meta {
+	color: black;
+	font-size: 20px;
+	font-family: "Quicksand", Arial, sans-serif;
+}
+
+.colorlib-heading {
+	color: black;
+	font-size: 80px;
+	font-family: "Quicksand", Arial, sans-serif;
+}
+
+/* un sa contacts */
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* =======================================================
+*
+* 	Template Style 
+*	Edit this section
+*
+* ======================================================= */
+body {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(0, 0, 0, 0.7); }
+  @media screen and (max-width: 992px) {
+    body {
+      font-size: 16px; } }
+
+a {
+  color: #2c98f0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  a:hover, a:active, a:focus {
+    color: #2c98f0;
+    outline: none;
+    text-decoration: none !important; }
+
+p {
+  margin-bottom: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0; }
+
+figure {
+  margin-bottom: 2.5em;
+  float: left;
+  width: 100%; }
+  figure figcaption {
+    font-size: 16px;
+    width: 80%;
+    margin: 20px auto 0px auto;
+    color: #b3b3b3;
+    font-style: italic;
+    font-family: "Quicksand", Arial, sans-serif; }
+    @media screen and (max-width: 480px) {
+      figure figcaption {
+        width: 100%; } }
+
+::-webkit-selection {
+  color: #fff;
+  background: #2c98f0; }
+
+::-moz-selection {
+  color: #fff;
+  background: #2c98f0; }
+
+::selection {
+  color: #fff;
+  background: #2c98f0; }
+
+#colorlib-page {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+
+#colorlib-aside {
+  padding-top: 3em;
+  padding-bottom: 40px;
+  float: left;
+  width: 300px;
+  position: fixed;
+  overflow-y: scroll;
+  z-index: 1001;
+  background: #f2f3f7;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  
+
+
+
+.introduction {
+background-color: white; 
+}
+
+
+.colorlib-about {
+    padding: 60px 0;
+	background-color: white;
+}
+.colorlib-services {
+    background: #f4f4f4;
+    padding: 60px 0;
+	background-color: white;
+}
+.about-desc {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+	background-color: white;
+}
+
+.colorlib-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+	background-color: white;
+}
+
+.heading-meta {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+	background-color: white;
+}
+
+.rounded-circle {
+    border: 5px solid #333;
+    margin: 20px 0;
+}
+
+.about-desc p {
+    font-size: 18px;
+    color: #555;
+}
+
+.about-desc strong {
+    font-size: 22px;
+    color: #333;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+@media screen and (max-width: 992px) {
+    body {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+ a {
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        margin: 5px;
+    }
+    
+    a:hover {
+        color: #007bff;
+    }
+    
+    i {
+        margin-right: 8px;
+    }
+
+.col-md-4 {
+	text-align: center;
+}
+
+
+.contacts {
+	text-align: center;
+}
+
+  
+  .form-control:active, .form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: transparent;
+    background: #f0f0f0; } */
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+body {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.colorlib-contact {
+    background: #f9f9f9;
+    padding: 10px 0;
+}
+
+.colorlib-heading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+.form-control {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-send-message {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-send-message:hover {
+    background: #555;
+}
 
