@@ -19,513 +19,528 @@
             <img src="resources/cyeon logo white.PNG" alt="Logo" class="logo-img"> 
          </div>
       </div>
-      <div class="container-fluid p-0 d-flex h-100">
-      <!-- Side navigation -->
-      <div class="sidenav">
-         <img src="resources/cyeon logo black.PNG" class="rounded-circle mt-2" alt="Circular Image" height="150px" width="150px">
-         <a class="list-group-item list-group-item-action active" data-toggle="list" href="#about" role="tab">About</a>
-         <a class="list-group-item list-group-item-action" data-toggle="list" href="#services" role="tab">Services</a>
-         <a class="list-group-item list-group-item-action" data-toggle="list" href="#works" role="tab">Works</a>
-         <a class="list-group-item list-group-item-action" data-toggle="list" href="#contacts" role="tab">Contacts</a>
-      </div>
-      <script>
-         // Select all sidebar links
-         const sidenavLinks = document.querySelectorAll('.sidenav a');
-         
-         // Loop through links and add click event listeners
-         sidenavLinks.forEach(link => {
-             link.addEventListener('click', function () {
-                 // Remove 'active' class from all links
-                 sidenavLinks.forEach(item => item.classList.remove('active'));
-         
-                 // Add 'active' class to the clicked link
-                 this.classList.add('active');
-             });
-         });
-      </script>
-      <!-- Tab panes
-         <div class="tab-content">
-            <div class="tab-pane active" id="about" role="tabpanel">...</div>
-            <div class="tab-pane" id="services" role="tabpanel">...</div>
-            <div class="tab-pane" id="works" role="tabpanel">...</div>
-            <div class="tab-pane" id="contacts" role="tabpanel">...</div>
-         </div> -->
-      <!-- Page content -->
-      <div class="main">
-      </div>
-      <!-- start main box -->
-      <div class="introduction">
-         <section class="colorlib-about" id="about">
-            <div class="colorlib-narrow-content">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="about-desc text-center">
-                        <span class="heading-meta">About Us</span>
-                        <h2 class="colorlib-heading">Who Am I?</h2>
-                        <img src="resources/raccoon.jpg" class="rounded-circle mt-2" alt="Cyeon Profile Picture" height="150" width="150">
-                        <p><strong>Hi, I'm Cyeon</strong></p>
-                        <p>Your friendly Digital and Graphic Artist. You can follow me at my Social media accounts below.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="contacts">
-                  <a href="https://www.facebook.com/ronel.sumague.1" target="_blank">
-                  <i class="fab fa-facebook"></i> Ronel Sumague
-                  </a>
-				  
-                  <a href="https://www.instagram.com/_damdamicyeon/" target="_blank">
-                  <i class="fab fa-instagram"></i> _damdamicyeon
-                  </a>
-               </div>
-            </div>
-         </section>
-         <hr>
-         <div class="row row-pt-md" id="services">
-            <div class="col-md-4">
-               <div class="services color-1">
-                  <span class="icon">
-                  <i class="icon-bulb"></i>
-                  </span>
-                  <div class="desc">
-                     <h1>Innovative Ideas</h1>
-                     <p>Can provide you Ideas for your Designs</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="services color-2">
-                  <span class="icon">
-                  <i class="icon-data"></i>
-                  </span>
-                  <div class="desc">
-                     <h1>Digital Art</h1>
-                     <p>Can do customizes Digital art</p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-4">
-               <div class="services color-4">
-                  <span class="icon">
-                  <i class="icon-layers2"></i>
-                  </span>
-                  <div class="desc">
-                     <h1>Graphic Design</h1>
-                     <p>Can offer Graphic design for your business or personal use</p>
-                  </div>
-               </div>
-            </div>
+      <div id="dv-main" class="container-fluid p-0 d-flex h-100">
+         <!-- Side navigation -->
+         <div class="sidenav">
+			<div class="sidenav-dv">
+				<img src="resources/cyeon logo black.PNG" class="rounded-circle mt-2" alt="Circular Image" height="150px" width="150px">
+			</div>
+            
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#about" role="tab">About</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#services" role="tab">Services</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#works" role="tab">Works</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#contacts" role="tab">Contacts</a>
          </div>
-         <hr>
-         <div class="p-4 " id="works">
-            <div class="row">
-               <div class="col">
-                  <div class="work-main">
-				     <hr>
-                     <div class="work-title-1">
-                        <h1> Mock Up Designs </h1>
-                     </div>
-					 <hr>
-                     <div class="wrapper-1">
-                        <img id="myImg07" class="img-thumbnail" src="resources/VILLAIN ALBUM V1 RED.png" alt="Red villain version mock up" style="width:100%"onclick="callModal('myModal07', 'myImg07', 'img08', 'caption07', 'close07');">
-                        <!-- The Modal -->
-                        <div id="myModal07" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close07" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img08">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption07" class="caption"></div>
-                        </div>
-                        <img id="myImg08" class="img-thumbnail" src="resources/VILLAIN ALBUM V2 WHITE.png" alt="White villain version mock up" style="width:100%"onclick="callModal('myModal08', 'myImg08', 'img09', 'caption08', 'close08');">
-                        <!-- The Modal -->
-                        <div id="myModal08" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close08" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img09">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption08" class="caption"></div>
-                        </div>
-                        <img id="myImg09" class="img-thumbnail" src="resources/VILLAIN ALBUM VER 1 RED BACK SIDE.png" alt="Red villain version (Back) mock up" style="width:100%"onclick="callModal('myModal09', 'myImg09', 'img10', 'caption09', 'close09');">
-                        <!-- The Modal -->
-                        <div id="myModal09" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close09" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img10">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption09" class="caption"></div>
-                        </div>
-                        <img id="myImg10" class="img-thumbnail" src="resources/VILLAIN ALBUM VER 2 WHITE BACK SIDE.png" alt="White villain version (Back) mock up" style="width:100%"onclick="callModal('myModal10', 'myImg10', 'img11', 'caption10', 'close10');">
-                        <!-- The Modal -->
-                        <div id="myModal10" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close10" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img11">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption10" class="caption"></div>
-                        </div>
-                        <img id="myImg11" class="img-thumbnail" src="resources/villain cd 1.png" alt="Red villain version CD mock up" style="width:100%"onclick="callModal('myModal11', 'myImg11', 'img12', 'caption11', 'close11');">
-                        <!-- The Modal -->
-                        <div id="myModal11" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close11" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img12">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption11" class="caption"></div>
-                        </div>
-                        <img id="myImg12" class="img-thumbnail" src="resources/villain cd 1.1.png" alt="Red villain version CD mock up" style="width:100%"onclick="callModal('myModal12', 'myImg12', 'img13', 'caption12', 'close12');">
-                        <!-- The Modal -->
-                        <div id="myModal12" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close12" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img13">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption12" class="caption"></div>
-                        </div>
-                        <img id="myImg13" class="img-thumbnail" src="resources/villain cd 2.1.png" alt="White villain version CD mock up" style="width:100%"onclick="callModal('myModal13', 'myImg13', 'img14', 'caption13', 'close13');">
-                        <!-- The Modal -->
-                        <div id="myModal13" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close13" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img14">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption13" class="caption"></div>
-                        </div>
-                        <img id="myImg14" class="img-thumbnail" src="resources/villain cd 2.2.png" alt="White villain version CD mock up" style="width:100%"onclick="callModal('myModal14', 'myImg14', 'img15', 'caption14', 'close14');">
-                        <!-- The Modal -->
-                        <div id="myModal14" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close14" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img15">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption14" class="caption"></div>
+         <button id="btn-sidebar" class="toggle-btn">☰</button>
+         <script>
+            // Select all sidebar links
+            const sidenavLinks = document.querySelectorAll('.sidenav a');
+            
+            // Loop through links and add click event listeners
+            sidenavLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    // Remove 'active' class from all links
+                    sidenavLinks.forEach(item => item.classList.remove('active'));
+            
+                    // Add 'active' class to the clicked link
+                    this.classList.add('active');
+                });
+            });
+         </script>
+         <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const toggleBtn = document.querySelector(".toggle-btn");
+            const sidenav = document.querySelector(".sidenav");
+            const links = document.querySelectorAll(".sidenav a");
+            
+            // Toggle sidebar visibility
+            toggleBtn.addEventListener("click", function () {
+            sidenav.classList.toggle("active");
+            });
+            
+            // Close sidebar when a link is clicked
+            links.forEach(link => {
+            link.addEventListener("click", function () {
+              sidenav.classList.remove("active");
+            });
+            });
+            });
+         </script>
+         <div class="main">
+         </div>
+         <!-- start main box -->
+         <div class="introduction">
+            <section class="colorlib-about" id="about">
+               <div class="colorlib-narrow-content">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="about-desc text-center">
+                           <span class="heading-meta">About Us</span>
+                           <h2 class="colorlib-heading">Who Am I?</h2>
+                           <img src="resources/raccoon.jpg" class="rounded-circle mt-2" alt="Cyeon Profile Picture" height="150" width="150">
+                           <p><strong>Hi, I'm Cyeon</strong></p>
+                           <p>Your friendly Digital and Graphic Artist. You can follow me at my Social media accounts below.</p>
                         </div>
                      </div>
-					 <hr>
-                     <div class="work-title-1">
-                        <h1> Digital Artworks </h1>
+                  </div>
+                  <div class="contacts">
+                     <a href="https://www.facebook.com/ronel.sumague.1" target="_blank">
+                     <i class="fab fa-facebook"></i> Ronel Sumague
+                     </a>
+                     <a href="https://www.instagram.com/_damdamicyeon/" target="_blank">
+                     <i class="fab fa-instagram"></i> _damdamicyeon
+                     </a>
+                  </div>
+               </div>
+            </section>
+            <hr>
+            <div class="row row-pt-md" id="services">
+               <div class="col-md-4">
+                  <div class="services color-1">
+                     <span class="icon">
+                     <i class="icon-bulb"></i>
+                     </span>
+                     <div class="desc">
+                        <h1>Innovative Ideas</h1>
+                        <p>Can provide you Ideas for your Designs</p>
                      </div>
-					 <hr>
-                     <div class="wrapper-2">
-                        <img id="myImg15" class="img-thumbnail" src="resources/moonje cosplay_20241118175427.png" alt="Moon Jehyun fanArt" style="width:100%"onclick="callModal('myModal15', 'myImg15', 'img16', 'caption15', 'close15');">
-                        <!-- The Modal -->
-                        <div id="myModal15" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close15" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img16">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption15" class="caption"></div>
-                        </div>
-                        <img id="myImg16" class="img-thumbnail" src="resources/Yedam_20240621015146.png" alt="Lee Yedam fanArt" style="width:100%"onclick="callModal('myModal16', 'myImg16', 'img17', 'caption16', 'close16');">
-                        <!-- The Modal -->
-                        <div id="myModal16" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close16" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img17">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption16" class="caption"></div>
-                        </div>
-                        <img id="myImg17" class="img-thumbnail" src="resources/Untitled105-1.png" alt="Lee Jinwoo fanArt" style="width:100%"onclick="callModal('myModal17', 'myImg17', 'img18', 'caption17', 'close17');">
-                        <!-- The Modal -->
-                        <div id="myModal17" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close17" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img18">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption17" class="caption"></div>
-                        </div>
-                        <img id="myImg18" class="img-thumbnail" src="resources/Untitled106_20241123192541.png" alt="Cabbage Hyun" style="width:100%"onclick="callModal('myModal18', 'myImg18', 'img19', 'caption18', 'close18');">
-                        <!-- The Modal -->
-                        <div id="myModal18" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close18" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img19">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption18" class="caption"></div>
-                        </div>
-                        <img id="myImg19" class="img-thumbnail" src="resources/Untitled167.png" alt="Lucy's Wonsang" style="width:100%"onclick="callModal('myModal19', 'myImg19', 'img20', 'caption19', 'close19');">
-                        <!-- The Modal -->
-                        <div id="myModal19" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close19" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img20">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption19" class="caption"></div>
-                        </div>
-                        <img id="myImg20" class="img-thumbnail" src="resources/Untitled173.png" alt="Lucy's Yechan" style="width:100%"onclick="callModal('myModal20', 'myImg20', 'img21', 'caption20', 'close20');">
-                        <!-- The Modal -->
-                        <div id="myModal20" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close20" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img21">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption20" class="caption"></div>
-                        </div>
-                        <img id="myImg21" class="img-thumbnail" src="resources/Untitled180.png" alt="Moon Jehyun" style="width:100%"onclick="callModal('myModal21', 'myImg21', 'img22', 'caption21', 'close21');">
-                        <!-- The Modal -->
-                        <div id="myModal21" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close21" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img22">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption21" class="caption"></div>
-                        </div>
-                        <img id="myImg22" class="img-thumbnail" src="resources/Untitled182.png" alt="Moon Jehyun" style="width:100%"onclick="callModal('myModal22', 'myImg22', 'img23', 'caption22', 'close22');">
-                        <!-- The Modal -->
-                        <div id="myModal22" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close22" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img23">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption22" class="caption"></div>
-                        </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="services color-2">
+                     <span class="icon">
+                     <i class="icon-data"></i>
+                     </span>
+                     <div class="desc">
+                        <h1>Digital Art</h1>
+                        <p>Can do customizes Digital art</p>
                      </div>
-					 <hr>
-                     <div class="work-title-1">
-                        <h1> Magazine Layout </h1>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="services color-4">
+                     <span class="icon">
+                     <i class="icon-layers2"></i>
+                     </span>
+                     <div class="desc">
+                        <h1>Graphic Design</h1>
+                        <p>Can offer Graphic design for your business or personal use</p>
                      </div>
-					 <hr>
-                     <div class="wrapper-3">
-                        <img id="myImg23" class="img-thumbnail" src="resources/COVER.png" alt="Y2K Fashion Magazine Cover" style="width:100%"onclick="callModal('myModal23', 'myImg23', 'img24', 'caption23', 'close23');">
-                        <!-- The Modal -->
-                        <div id="myModal23" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close23" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img24">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption23" class="caption"></div>
+                  </div>
+               </div>
+            </div>
+            <hr>
+            <div class="p-4 " id="works">
+               <div class="row">
+                  <div class="col">
+                     <div class="work-main">
+                        <hr>
+                        <div class="work-title-1">
+                           <h1> Mock Up Designs </h1>
                         </div>
-                        <img id="myImg24" class="img-thumbnail" src="resources/EDITORIAL 1.png" alt="Y2K Fashion Magazine Editorial" style="width:100%"onclick="callModal('myModal24', 'myImg24', 'img25', 'caption24', 'close24');">
-                        <!-- The Modal -->
-                        <div id="myModal24" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close24" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img25">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption24" class="caption"></div>
-                        </div>
-                        <img id="myImg25" class="img-thumbnail" src="resources/EDITORIAL 2.png" alt="Y2K Fashion Magazine Editorial page 2" style="width:100%"onclick="callModal('myModal25', 'myImg25', 'img26', 'caption25', 'close25');">
-                        <!-- The Modal -->
-                        <div id="myModal25" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close25" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img26">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption25" class="caption"></div>
-                        </div>
-                        <img id="myImg26" class="img-thumbnail" src="resources/ARTICLE 1.png" alt="Magazine Article page 1" style="width:100%"onclick="callModal('myModal26', 'myImg26', 'img27', 'caption26', 'close26');">
-                        <!-- The Modal -->
-                        <div id="myModal26" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close26" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img27">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption26" class="caption"></div>
-                        </div>
-                        <img id="myImg27" class="img-thumbnail" src="resources/ARTICLE 2.png" alt="Magazine Article page 2" style="width:100%"onclick="callModal('myModal27', 'myImg27', 'img28', 'caption27', 'close27');">
-                        <!-- The Modal -->
-                        <div id="myModal27" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close27" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img28">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption27" class="caption"></div>
-                        </div>
-                     </div>
-					 <hr>
-                     <div class="work-title-1">
-                        <h1> Mobile UI Designs </h1>
-                     </div>
-					 <hr>
-                     <div class="wrapper-5">
-                        <img id="myImg28" class="img-thumbnail" src="resources/1.png" alt="Mobile UI Home page" style="width:100%" onclick="callModal('myModal28', 'myImg28', 'img29', 'caption28', 'close28');">
-                        <!-- The Modal -->
-                        <div id="myModal28" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close28" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img id="img29" class="modal-content">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption28" class="caption"></div>
-                        </div>
-                        <img id="myImg29" class="img-thumbnail" src="resources/2.png" alt="Mobile UI Content page" style="width:100%" onclick="callModal('myModal29', 'myImg29', 'img30', 'caption29', 'close29');">
-                        <!-- The Modal -->
-                        <div id="myModal29" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close29" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img id="img30" class="modal-content">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption29" class="caption"></div>
-                        </div>
-                        <img id="myImg30" class="img-thumbnail" src="resources/3.png" alt="Mobile UI Content Overview page" style="width:100%" onclick="callModal('myModal30', 'myImg30', 'img31', 'caption30', 'close30');">
-                        <!-- The Modal -->
-                        <div id="myModal30" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close30" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img id="img31" class="modal-content">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption30" class="caption"></div>
-                        </div>
-                     </div>
-					 <hr>
-                     <div class="work-title-1">
-                        <h1> Graphic Designs </h1>
-                     </div>
-					 <hr>
-                     <div class="wrapper-0">
-                        <img id="myImg" class="img-thumbnail" src="resources/harley infograph.png" alt="harley quinn infographics" style="width:100%" onclick="callModal('myModal', 'myImg', 'img01', 'caption', 'close');">
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img id="img01" class="modal-content">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption" class="caption"></div>
-                        </div>
-                        <img id="myImg01" class="img-thumbnail" src="resources/Too much is bad, Make it balance.png" alt="krispy kreme poster" style="width:100%" onclick="callModal('myModal01', 'myImg01', 'img02', 'caption01', 'close01');">
-                        <!-- The Modal -->
-                        <div id="myModal01" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close01" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img02">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption01" class="caption"></div>
-                        </div>
-                        <img id="myImg02" class="img-thumbnail" src="resources/Sumague (2).png" alt="SM store promotional poster" style="width:100%" onclick="callModal('myModal02', 'myImg02', 'img03', 'caption02', 'close02');">
-                        <!-- The Modal -->
-                        <div id="myModal02" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close02" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img03">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption02" class="caption"></div>
-                        </div>
-                        <img id="myImg03" class="img-thumbnail" src="resources/LOUIS-Sumague.png" alt="Louis the cat magazine cover" style="width:100%" onclick="callModal('myModal03', 'myImg03', 'img04', 'caption03', 'close03');">
-                        <!-- The Modal -->
-                        <div id="myModal03" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close03" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img04">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption03" class="caption"></div>
-                        </div>
-                        <img id="myImg04" class="img-thumbnail" src="resources/Villain Album art cover.png" alt="Villain Album Art" style="width:100%"onclick="callModal('myModal04', 'myImg04', 'img05', 'caption04', 'close04');">
-                        <!-- The Modal -->
-                        <div id="myModal04" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close04" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img05">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption04" class="caption"></div>
-                        </div>
-                        <img id="myImg05" class="img-thumbnail" src="resources/SUMAGUE.png" alt="Lays promotional poster" style="width:100%"onclick="callModal('myModal05', 'myImg05', 'img06', 'caption05', 'close05');">
-                        <!-- The Modal -->
-                        <div id="myModal05" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close05" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img06">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption05" class="caption"></div>
-                        </div>
-                        <img id="myImg06" class="img-thumbnail" src="resources/Itzy aquaflask.png" alt="Itzy Aquaflask mock up" style="width:100%"onclick="callModal('myModal06', 'myImg06', 'img07', 'caption06', 'close06');">
-                        <!-- The Modal -->
-                        <div id="myModal06" class="modal">
-                           <!-- The Close Button -->
-                           <span id="close06" class="close">&times;</span>
-                           <!-- Modal Content (The Image) -->
-                           <img class="modal-content" id="img07">
-                           <!-- Modal Caption (Image Text) -->
-                           <div id="caption06" class="caption"></div>
-                        </div>
-                     </div>
-					 <hr>
-                     <div class="work-title-1">
-                        <h1>Motion Graphics</h1>
-                     </div>
-					 <hr>
-                     <div class="wrapper-4">
-                        <div class="item">
-					    <div class="video-container"  onclick="playVideo()">
-                              <video class="video" src="resources/BASKIN REEL.mp4" poster="resources/IMG_2496.PNG" width="450" height="500"></video>
-                              <div class="play-button" onclick="togglePlay(this)"></div>
+                        <hr>
+                        <div class="wrapper-1">
+                           <img id="myImg07" class="img-thumbnail" src="resources/VILLAIN ALBUM V1 RED.png" alt="Red villain version mock up" style="width:100%"onclick="callModal('myModal07', 'myImg07', 'img08', 'caption07', 'close07');">
+                           <!-- The Modal -->
+                           <div id="myModal07" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close07" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img08">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption07" class="caption"></div>
+                           </div>
+                           <img id="myImg08" class="img-thumbnail" src="resources/VILLAIN ALBUM V2 WHITE.png" alt="White villain version mock up" style="width:100%"onclick="callModal('myModal08', 'myImg08', 'img09', 'caption08', 'close08');">
+                           <!-- The Modal -->
+                           <div id="myModal08" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close08" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img09">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption08" class="caption"></div>
+                           </div>
+                           <img id="myImg09" class="img-thumbnail" src="resources/VILLAIN ALBUM VER 1 RED BACK SIDE.png" alt="Red villain version (Back) mock up" style="width:100%"onclick="callModal('myModal09', 'myImg09', 'img10', 'caption09', 'close09');">
+                           <!-- The Modal -->
+                           <div id="myModal09" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close09" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img10">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption09" class="caption"></div>
+                           </div>
+                           <img id="myImg10" class="img-thumbnail" src="resources/VILLAIN ALBUM VER 2 WHITE BACK SIDE.png" alt="White villain version (Back) mock up" style="width:100%"onclick="callModal('myModal10', 'myImg10', 'img11', 'caption10', 'close10');">
+                           <!-- The Modal -->
+                           <div id="myModal10" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close10" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img11">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption10" class="caption"></div>
+                           </div>
+                           <img id="myImg11" class="img-thumbnail" src="resources/villain cd 1.png" alt="Red villain version CD mock up" style="width:100%"onclick="callModal('myModal11', 'myImg11', 'img12', 'caption11', 'close11');">
+                           <!-- The Modal -->
+                           <div id="myModal11" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close11" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img12">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption11" class="caption"></div>
+                           </div>
+                           <img id="myImg12" class="img-thumbnail" src="resources/villain cd 1.1.png" alt="Red villain version CD mock up" style="width:100%"onclick="callModal('myModal12', 'myImg12', 'img13', 'caption12', 'close12');">
+                           <!-- The Modal -->
+                           <div id="myModal12" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close12" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img13">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption12" class="caption"></div>
+                           </div>
+                           <img id="myImg13" class="img-thumbnail" src="resources/villain cd 2.1.png" alt="White villain version CD mock up" style="width:100%"onclick="callModal('myModal13', 'myImg13', 'img14', 'caption13', 'close13');">
+                           <!-- The Modal -->
+                           <div id="myModal13" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close13" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img14">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption13" class="caption"></div>
+                           </div>
+                           <img id="myImg14" class="img-thumbnail" src="resources/villain cd 2.2.png" alt="White villain version CD mock up" style="width:100%"onclick="callModal('myModal14', 'myImg14', 'img15', 'caption14', 'close14');">
+                           <!-- The Modal -->
+                           <div id="myModal14" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close14" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img15">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption14" class="caption"></div>
                            </div>
                         </div>
-                        <div class="item">
-                           <div class="video-container"  onclick="playVideo()">
-                              <video class="video" src="resources/sumague tp (2).mp4" poster="resources/IMG_2497.PNG" width="450" height="500"></video>
-                              <div class="play-button" onclick="togglePlay(this)"></div>
+                        <hr>
+                        <div class="work-title-1">
+                           <h1> Digital Artworks </h1>
+                        </div>
+                        <hr>
+                        <div class="wrapper-2">
+                           <img id="myImg15" class="img-thumbnail" src="resources/moonje cosplay_20241118175427.png" alt="Moon Jehyun fanArt" style="width:100%"onclick="callModal('myModal15', 'myImg15', 'img16', 'caption15', 'close15');">
+                           <!-- The Modal -->
+                           <div id="myModal15" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close15" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img16">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption15" class="caption"></div>
+                           </div>
+                           <img id="myImg16" class="img-thumbnail" src="resources/Yedam_20240621015146.png" alt="Lee Yedam fanArt" style="width:100%"onclick="callModal('myModal16', 'myImg16', 'img17', 'caption16', 'close16');">
+                           <!-- The Modal -->
+                           <div id="myModal16" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close16" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img17">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption16" class="caption"></div>
+                           </div>
+                           <img id="myImg17" class="img-thumbnail" src="resources/Untitled105-1.png" alt="Lee Jinwoo fanArt" style="width:100%"onclick="callModal('myModal17', 'myImg17', 'img18', 'caption17', 'close17');">
+                           <!-- The Modal -->
+                           <div id="myModal17" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close17" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img18">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption17" class="caption"></div>
+                           </div>
+                           <img id="myImg18" class="img-thumbnail" src="resources/Untitled106_20241123192541.png" alt="Cabbage Hyun" style="width:100%"onclick="callModal('myModal18', 'myImg18', 'img19', 'caption18', 'close18');">
+                           <!-- The Modal -->
+                           <div id="myModal18" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close18" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img19">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption18" class="caption"></div>
+                           </div>
+                           <img id="myImg19" class="img-thumbnail" src="resources/Untitled167.png" alt="Lucy's Wonsang" style="width:100%"onclick="callModal('myModal19', 'myImg19', 'img20', 'caption19', 'close19');">
+                           <!-- The Modal -->
+                           <div id="myModal19" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close19" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img20">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption19" class="caption"></div>
+                           </div>
+                           <img id="myImg20" class="img-thumbnail" src="resources/Untitled173.png" alt="Lucy's Yechan" style="width:100%"onclick="callModal('myModal20', 'myImg20', 'img21', 'caption20', 'close20');">
+                           <!-- The Modal -->
+                           <div id="myModal20" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close20" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img21">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption20" class="caption"></div>
+                           </div>
+                           <img id="myImg21" class="img-thumbnail" src="resources/Untitled180.png" alt="Moon Jehyun" style="width:100%"onclick="callModal('myModal21', 'myImg21', 'img22', 'caption21', 'close21');">
+                           <!-- The Modal -->
+                           <div id="myModal21" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close21" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img22">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption21" class="caption"></div>
+                           </div>
+                           <img id="myImg22" class="img-thumbnail" src="resources/Untitled182.png" alt="Moon Jehyun" style="width:100%"onclick="callModal('myModal22', 'myImg22', 'img23', 'caption22', 'close22');">
+                           <!-- The Modal -->
+                           <div id="myModal22" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close22" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img23">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption22" class="caption"></div>
                            </div>
                         </div>
-                        <div class="item">
-                           <div class="video-container"  onclick="playVideo()">
-                              <video class="video"  src="resources/sumague tp.mp4" poster="resources/82f90460c468b2158c55b2dd6fe8069f.jpg" width="450" height="500"></video>
-                              <div class="play-button" onclick="togglePlay(this)"></div>
+                        <hr>
+                        <div class="work-title-1">
+                           <h1> Magazine Layout </h1>
+                        </div>
+                        <hr>
+                        <div class="wrapper-3">
+                           <img id="myImg23" class="img-thumbnail" src="resources/COVER.png" alt="Y2K Fashion Magazine Cover" style="width:100%"onclick="callModal('myModal23', 'myImg23', 'img24', 'caption23', 'close23');">
+                           <!-- The Modal -->
+                           <div id="myModal23" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close23" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img24">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption23" class="caption"></div>
+                           </div>
+                           <img id="myImg24" class="img-thumbnail" src="resources/EDITORIAL 1.png" alt="Y2K Fashion Magazine Editorial" style="width:100%"onclick="callModal('myModal24', 'myImg24', 'img25', 'caption24', 'close24');">
+                           <!-- The Modal -->
+                           <div id="myModal24" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close24" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img25">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption24" class="caption"></div>
+                           </div>
+                           <img id="myImg25" class="img-thumbnail" src="resources/EDITORIAL 2.png" alt="Y2K Fashion Magazine Editorial page 2" style="width:100%"onclick="callModal('myModal25', 'myImg25', 'img26', 'caption25', 'close25');">
+                           <!-- The Modal -->
+                           <div id="myModal25" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close25" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img26">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption25" class="caption"></div>
+                           </div>
+                           <img id="myImg26" class="img-thumbnail" src="resources/ARTICLE 1.png" alt="Magazine Article page 1" style="width:100%"onclick="callModal('myModal26', 'myImg26', 'img27', 'caption26', 'close26');">
+                           <!-- The Modal -->
+                           <div id="myModal26" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close26" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img27">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption26" class="caption"></div>
+                           </div>
+                           <img id="myImg27" class="img-thumbnail" src="resources/ARTICLE 2.png" alt="Magazine Article page 2" style="width:100%"onclick="callModal('myModal27', 'myImg27', 'img28', 'caption27', 'close27');">
+                           <!-- The Modal -->
+                           <div id="myModal27" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close27" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img28">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption27" class="caption"></div>
                            </div>
                         </div>
-                        <div class="item">
-                           <div class="video-container"  onclick="playVideo()">
-                              <video class="video"  src="resources/Sumague.mp4" poster="resources/Baskin-Robbins_logo.svg.png" width="450" height="500"></video>
-                              <div class="play-button" onclick="togglePlay(this)"></div>
+                        <hr>
+                        <div class="work-title-1">
+                           <h1> Mobile UI Designs </h1>
+                        </div>
+                        <hr>
+                        <div class="wrapper-5">
+                           <img id="myImg28" class="img-thumbnail" src="resources/1.png" alt="Mobile UI Home page" style="width:100%" onclick="callModal('myModal28', 'myImg28', 'img29', 'caption28', 'close28');">
+                           <!-- The Modal -->
+                           <div id="myModal28" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close28" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img id="img29" class="modal-content">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption28" class="caption"></div>
+                           </div>
+                           <img id="myImg29" class="img-thumbnail" src="resources/2.png" alt="Mobile UI Content page" style="width:100%" onclick="callModal('myModal29', 'myImg29', 'img30', 'caption29', 'close29');">
+                           <!-- The Modal -->
+                           <div id="myModal29" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close29" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img id="img30" class="modal-content">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption29" class="caption"></div>
+                           </div>
+                           <img id="myImg30" class="img-thumbnail" src="resources/3.png" alt="Mobile UI Content Overview page" style="width:100%" onclick="callModal('myModal30', 'myImg30', 'img31', 'caption30', 'close30');">
+                           <!-- The Modal -->
+                           <div id="myModal30" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close30" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img id="img31" class="modal-content">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption30" class="caption"></div>
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="work-title-1">
+                           <h1> Graphic Designs </h1>
+                        </div>
+                        <hr>
+                        <div class="wrapper-0">
+                           <img id="myImg" class="img-thumbnail" src="resources/harley infograph.png" alt="harley quinn infographics" style="width:100%" onclick="callModal('myModal', 'myImg', 'img01', 'caption', 'close');">
+                           <!-- The Modal -->
+                           <div id="myModal" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img id="img01" class="modal-content">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption" class="caption"></div>
+                           </div>
+                           <img id="myImg01" class="img-thumbnail" src="resources/Too much is bad, Make it balance.png" alt="krispy kreme poster" style="width:100%" onclick="callModal('myModal01', 'myImg01', 'img02', 'caption01', 'close01');">
+                           <!-- The Modal -->
+                           <div id="myModal01" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close01" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img02">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption01" class="caption"></div>
+                           </div>
+                           <img id="myImg02" class="img-thumbnail" src="resources/Sumague (2).png" alt="SM store promotional poster" style="width:100%" onclick="callModal('myModal02', 'myImg02', 'img03', 'caption02', 'close02');">
+                           <!-- The Modal -->
+                           <div id="myModal02" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close02" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img03">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption02" class="caption"></div>
+                           </div>
+                           <img id="myImg03" class="img-thumbnail" src="resources/LOUIS-Sumague.png" alt="Louis the cat magazine cover" style="width:100%" onclick="callModal('myModal03', 'myImg03', 'img04', 'caption03', 'close03');">
+                           <!-- The Modal -->
+                           <div id="myModal03" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close03" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img04">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption03" class="caption"></div>
+                           </div>
+                           <img id="myImg04" class="img-thumbnail" src="resources/Villain Album art cover.png" alt="Villain Album Art" style="width:100%"onclick="callModal('myModal04', 'myImg04', 'img05', 'caption04', 'close04');">
+                           <!-- The Modal -->
+                           <div id="myModal04" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close04" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img05">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption04" class="caption"></div>
+                           </div>
+                           <img id="myImg05" class="img-thumbnail" src="resources/SUMAGUE.png" alt="Lays promotional poster" style="width:100%"onclick="callModal('myModal05', 'myImg05', 'img06', 'caption05', 'close05');">
+                           <!-- The Modal -->
+                           <div id="myModal05" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close05" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img06">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption05" class="caption"></div>
+                           </div>
+                           <img id="myImg06" class="img-thumbnail" src="resources/Itzy aquaflask.png" alt="Itzy Aquaflask mock up" style="width:100%"onclick="callModal('myModal06', 'myImg06', 'img07', 'caption06', 'close06');">
+                           <!-- The Modal -->
+                           <div id="myModal06" class="modal">
+                              <!-- The Close Button -->
+                              <span id="close06" class="close">&times;</span>
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img07">
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption06" class="caption"></div>
+                           </div>
+                        </div>
+                        <hr>
+                        <div class="work-title-1">
+                           <h1>Motion Graphics</h1>
+                        </div>
+                        <hr>
+                        <div class="wrapper-4">
+                           <div class="item">
+                              <div class="video-container"  onclick="playVideo()">
+                                 <video class="video" src="resources/BASKIN REEL.mp4" poster="resources/IMG_2496.PNG" width="450" height="500"></video>
+                                 <div class="play-button" onclick="togglePlay(this)"></div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="video-container"  onclick="playVideo()">
+                                 <video class="video" src="resources/sumague tp (2).mp4" poster="resources/IMG_2497.PNG" width="450" height="500"></video>
+                                 <div class="play-button" onclick="togglePlay(this)"></div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="video-container"  onclick="playVideo()">
+                                 <video class="video"  src="resources/sumague tp.mp4" poster="resources/82f90460c468b2158c55b2dd6fe8069f.jpg" width="450" height="500"></video>
+                                 <div class="play-button" onclick="togglePlay(this)"></div>
+                              </div>
+                           </div>
+                           <div class="item">
+                              <div class="video-container"  onclick="playVideo()">
+                                 <video class="video"  src="resources/Sumague.mp4" poster="resources/Baskin-Robbins_logo.svg.png" width="450" height="500"></video>
+                                 <div class="play-button" onclick="togglePlay(this)"></div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-         <hr>
-         <div class="row" id="contacts">
-            <div class="col-md-7 col-md-push-1">
-               <h1>
-               Email me for Inquiries. 
-               <h1>
-               <div class="row">
-                  <div class="email" data-animate-effect="fadeInRight">
-                     <form action="https://formspree.io/f/xnnqrnnd" method="POST">
-                        <div class="form-group">
+            <hr>
+            <div class="row" id="contacts">
+               <div class="col-md-7 col-md-push-1">
+                  <h1>
+                  Email me for Inquiries. 
+                  <h1>
+                  <div class="row">
+                     <div class="email" data-animate-effect="fadeInRight">
+                        <form action="https://formspree.io/f/xnnqrnnd" method="POST">
                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Name" name="name" required>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Name" name="name" required>
+                              </div>
+                              <div class="form-group">
+                                 <input type="email" class="form-control" placeholder="Email" name="email" required>
+                              </div>
+                              <div class="form-group">
+                                 <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                              </div>
+                              <div class="form-group">
+                                 <textarea class="form-control" placeholder="Message" name="message" required></textarea>
+                              </div>
+                              <div class="form-group">
+                                 <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+                              </div>
                            </div>
-                           <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email" name="email" required>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Subject" name="subject" required>
-                           </div>
-                           <div class="form-group">
-                              <textarea class="form-control" placeholder="Message" name="message" required></textarea>
-                           </div>
-                           <div class="form-group">
-                              <input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-                           </div>
-                     </form>
+                        </form>
                      </div>
                   </div>
                </div>
