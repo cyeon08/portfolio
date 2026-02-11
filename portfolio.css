@@ -573,6 +573,186 @@ div.work-main {
 	opacity: 0.7;
 }
 
+#myImg31 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg31:hover {
+	opacity: 0.7;
+}
+
+#myImg32 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg32:hover {
+	opacity: 0.7;
+}
+
+#myImg33 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg33:hover {
+	opacity: 0.7;
+}
+
+#myImg34 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg34:hover {
+	opacity: 0.7;
+}
+
+
+#myImg35 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg35:hover {
+	opacity: 0.7;
+}
+
+#myImg36 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg36:hover {
+	opacity: 0.7;
+}
+
+#myImg37 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg37:hover {
+	opacity: 0.7;
+}
+
+#myImg38 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg38:hover {
+	opacity: 0.7;
+}
+#myImg39 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg39:hover {
+	opacity: 0.7;
+}
+
+#myImg40 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg40:hover {
+	opacity: 0.7;
+}
+
+
+#myImg41 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg41:hover {
+	opacity: 0.7;
+}
+
+#myImg42 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg42:hover {
+	opacity: 0.7;
+}
+
+
+#myImg43 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg43:hover {
+	opacity: 0.7;
+}
+
+
+#myImg44 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg44:hover {
+	opacity: 0.7;
+}
+
+
+#myImg45 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg45:hover {
+	opacity: 0.7;
+}
+
+
+#myImg46 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg46:hover {
+	opacity: 0.7;
+}
+
+
+#myImg47 {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg47:hover {
+	opacity: 0.7;
+}
+
+
+
+
+
 /* Modal container styling */
 .modal {
 	display: none;
@@ -617,7 +797,7 @@ div.work-main {
 
 /* Close button styling */
 .close {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	right: 35px;
 	color: white;
